@@ -1,11 +1,53 @@
-<section className="hero">
+import './Hero.css'
 
-    <div className="hero-left">
+function Hero() {
+    return (
+        <section className="hero">
 
-    </div>
+            <div className="hero-left">
+                <h1>Every Second Counts.</h1>
 
-    <div className="hero-right">
+                <h2>AI-powered Disaster Response Platform</h2>
 
-    </div>
+                <p>
+                    Helping communities, responders and authorities
+                    make faster and smarter decisions during disasters.
+                </p>
 
-</section>
+                <button>Get Started</button>
+            </div>
+
+            <div className="hero-right">
+                <div className="hero-visual">
+                    <div className="visual-header">
+                        <span>CRISISLENS AI</span>
+                        <span className="status">● LIVE</span>
+                    </div>
+
+                    <div className="map-area">
+                        <div className="map-shape">
+                            <div className="incident incident-one"></div>
+                            <div className="incident incident-two"></div>
+                            <div className="incident incident-three"></div>
+                        </div>
+
+                        <div className="visual-footer">
+                            <div>
+                                <strong>3</strong>
+                                <span>Active Alerts</span>
+                            </div>
+
+                            <div>
+                                <strong>87%</strong>
+                                <span>AI Confidence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    )
+}
+
+export default Hero

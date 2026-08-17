@@ -1,0 +1,177 @@
+html {
+    scroll-behavior: smooth;
+}
+/* =========================
+   Shared Section Styling
+   ========================= */
+
+.problem,
+.solution,
+.features,
+.how-it-works {
+    padding: 100px 80px;
+    text-align: center;
+}
+
+
+/* =========================
+   Problem
+   ========================= */
+
+.problem {
+    background-color: #11131a;
+}
+
+.problem h2,
+.solution h2,
+.features h2,
+.how-it-works h2 {
+    margin: 0 0 20px;
+    font-size: 36px;
+}
+
+.problem p,
+.solution > p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Solution
+   ========================= */
+
+.solution {
+    background-color: #171a22;
+}
+
+
+/* =========================
+   Features
+   ========================= */
+
+.feature-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.feature-card {
+    flex: 1;
+    max-width: 320px;
+
+    padding: 30px;
+
+    border: 1px solid #30343d;
+    border-radius: 16px;
+
+    background-color: #11131a;
+
+    text-align: left;
+}
+
+.feature-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    line-height: 1.6;
+}
+
+
+/* =========================
+   How It Works
+   ========================= */
+
+.steps {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.step {
+    flex: 1;
+    max-width: 300px;
+}
+
+.step > span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.step h3 {
+    margin: 12px 0;
+    font-size: 24px;
+}
+
+.step p {
+    line-height: 1.6;
+}
+
+/* =========================
+   CTA
+   ========================= */
+
+.cta {
+    padding: 100px 80px;
+    text-align: center;
+    background-color: #171a22;
+}
+
+.cta h2 {
+    margin: 0 0 20px;
+    font-size: 40px;
+}
+
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.cta button {
+    padding: 12px 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+    padding: 50px 80px;
+    text-align: center;
+
+    border-top: 1px solid #30343d;
+}
+
+.footer h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.footer p {
+    margin: 8px 0;
+    line-height: 1.5;
+}

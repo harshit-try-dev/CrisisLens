@@ -1,0 +1,133 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 70vh;
+    padding: 60px 80px;
+}
+
+.hero-left {
+    width: 55%;
+    text-align: left;
+    min-width: 0;
+}
+
+.hero-right {
+    width: 40%;
+    min-height: 400px;
+}
+
+.hero-visual {
+    min-height: 360px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #11131a;
+    box-sizing: border-box;
+}
+
+.visual-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.status {
+    font-size: 12px;
+}
+
+.map-area {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+}
+
+.map-shape {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+
+    background-color: #1b2430;
+
+    border: 1px solid #374151;
+    border-radius: 45% 55% 50% 40%;
+}
+
+.incident {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+    background-color: #ef4444;
+}
+
+.incident-one {
+    top: 35%;
+    left: 25%;
+}
+
+.incident-two {
+    top: 55%;
+    left: 60%;
+}
+
+.incident-three {
+    top: 25%;
+    left: 75%;
+}
+
+.visual-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visual-footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.visual-footer strong {
+    font-size: 22px;
+}
+
+.visual-footer span {
+    font-size: 12px;
+}
+
+.hero-left button {
+    margin-top: 20px;
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.hero-left button:hover {
+    background-color: #1d4ed8;
+}
+
+.hero-left h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+}
