@@ -1,0 +1,270 @@
+html {
+    scroll-behavior: smooth;
+}
+/* =========================
+   Shared Sections
+   ========================= */
+
+.problem,
+.solution,
+.features,
+.how-it-works {
+    padding: 110px 80px;
+}
+
+.problem h2,
+.solution h2,
+.features h2,
+.how-it-works h2 {
+    max-width: 800px;
+    margin: 0 auto 24px;
+
+    font-size: 42px;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.problem p,
+.solution > p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #aeb6c4;
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+
+/* =========================
+   Problem
+   ========================= */
+
+.problem {
+    background-color: transparent;
+}
+
+.problem h2 {
+    color: #f5f7fa;
+}
+
+
+/* =========================
+   Solution
+   ========================= */
+
+.solution {
+    background-color: #11131a;
+}
+
+.solution h2 {
+    color: #f5f7fa;
+}
+
+
+/* =========================
+   Features
+   ========================= */
+
+.features {
+    background-color: #0b0d12;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    max-width: 1100px;
+    margin: 55px auto 0;
+}
+
+.feature-card {
+    flex: 1;
+    max-width: 340px;
+
+    padding: 32px;
+
+    border: 1px solid #292e38;
+    border-radius: 18px;
+
+    background-color: #11131a;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    border-color: #2563eb;
+}
+
+.feature-card h3 {
+    margin: 0 0 14px;
+
+    font-size: 21px;
+}
+
+.feature-card p {
+    margin: 0;
+
+    color: #aeb6c4;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   How It Works
+   ========================= */
+
+.how-it-works {
+    background-color: #11131a;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    max-width: 1050px;
+    margin: 60px auto 0;
+}
+
+.step {
+    flex: 1;
+    max-width: 300px;
+}
+
+.step > span {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.step h3 {
+    margin: 0 0 12px;
+
+    font-size: 24px;
+}
+
+.step p {
+    margin: 0;
+
+    color: #aeb6c4;
+    line-height: 1.6;
+}
+/* =========================
+   CTA
+   ========================= */
+
+.cta {
+    padding: 110px 24px;
+
+    text-align: center;
+
+    background-color: #171a22;
+}
+
+.cta h2 {
+    margin: 0 auto 20px;
+
+    font-size: 44px;
+    line-height: 1.15;
+}
+
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 32px;
+
+    color: #aeb6c4;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.cta button {
+    padding: 13px 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.cta button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   Footer
+   ========================= */
+.footer {
+    padding: 50px 24px;
+
+    border-top: 1px solid #20242d;
+
+    background-color: #0b0d12;
+
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 0 0 10px;
+
+    color: #f5f7fa;
+    font-size: 22px;
+}
+
+.footer p {
+    margin: 8px 0;
+
+    color: #7f8999;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .problem,
+    .solution,
+    .features,
+    .how-it-works,
+    .cta {
+        padding: 80px 24px;
+    }
+
+    .problem h2,
+    .solution h2,
+    .features h2,
+    .how-it-works h2,
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    .feature-list,
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card,
+    .step {
+        width: 100%;
+        max-width: 500px;
+    }
+}
