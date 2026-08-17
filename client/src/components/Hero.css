@@ -43,6 +43,13 @@
 
 .status {
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status::first-letter {
+    color: #22c55e;
 }
 
 .map-area {
@@ -65,11 +72,40 @@
 
 .incident {
     position: absolute;
+
     width: 14px;
     height: 14px;
 
     border-radius: 50%;
     background-color: #ef4444;
+
+    cursor: pointer;
+}
+
+.incident span {
+    position: absolute;
+
+    left: 20px;
+    top: -5px;
+
+    white-space: nowrap;
+
+    padding: 5px 8px;
+
+    border-radius: 6px;
+
+    background-color: #20242d;
+    color: white;
+
+    font-size: 11px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.incident:hover span {
+    opacity: 1;
 }
 
 .incident-one {
@@ -130,4 +166,25 @@
     font-size: 48px;
     line-height: 1.1;
     margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 70px 24px;
+        gap: 50px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+    }
+
+    .hero-right {
+        min-height: auto;
+    }
 }

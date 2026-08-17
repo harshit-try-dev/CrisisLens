@@ -26,9 +26,17 @@ function Hero() {
 
                     <div className="map-area">
                         <div className="map-shape">
-                            <div className="incident incident-one"></div>
-                            <div className="incident incident-two"></div>
-                            <div className="incident incident-three"></div>
+                            <div className="incident incident-one">
+                                <span>Flood Alert</span>
+                            </div>
+
+                            <div className="incident incident-two">
+                                <span>Landslide</span>
+                            </div>
+
+                            <div className="incident incident-three">
+                                <span>Severe Weather</span>
+                            </div>
                         </div>
 
                         <div className="visual-footer">
